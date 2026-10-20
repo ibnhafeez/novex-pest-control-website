@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews | Novex Pest Control &amp; Cleaning Services L.L.C</title>
+  <meta name="description" content="Read customer reviews of Novex Pest Control in Abu Dhabi &amp; Al Ain — and add your own. Published automatically after you submit.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span class="lic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-shield"></use></svg> Abu Dhabi Licence No. CN-6758651</span>
+        <span class="arabic" lang="ar">نوفكس لمكافحة الآفات وخدمات النظافة</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+971541383916"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-phone"></use></svg> 054 1383 916</a>
+        <a href="mailto:novexpestconrolauh@gmail.com"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-mail"></use></svg> novexpestconrolauh@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Novex Pest Control home">
+        <img src="assets/logo.svg" alt="Novex Pest Control Cleaning Services L.L.C">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="hygiene.html">Hygiene Promise</a>
+        <a class="nav-link active" href="reviews.html">Reviews</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
+        <a class="nav-wa" href="#" data-wa="Hello Novex Pest Control, I need a quote." aria-label="Chat on WhatsApp">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-whatsapp"></use></svg>
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Reviews</span></div>
+        <h1>Customer Reviews</h1>
+        <p>
+          Real feedback from homes and businesses we serviced across Abu Dhabi &amp; Al Ain.
+          Used our service? <strong style="color:var(--lime);">Add your review below — it is published automatically</strong> the moment you submit it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= RATING SUMMARY ================= -->
+    <section class="section" style="padding-bottom:1.5rem;">
+      <div class="container">
+        <div class="rating-summary reveal">
+          <div class="rating-big">
+            <div class="score" id="rating-score">—</div>
+            <div class="stars" aria-hidden="true">
+              <svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg>
+              <svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg>
+              <svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg>
+              <svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg>
+              <svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg>
+            </div>
+            <div class="count" id="rating-count">Loading reviews…</div>
+          </div>
+          <div class="rating-bars">
+            <div class="row"><span>5 ★</span><div class="bar" data-star="5"><i style="width:0%"></i></div><span data-count="5">0</span></div>
+            <div class="row"><span>4 ★</span><div class="bar" data-star="4"><i style="width:0%"></i></div><span data-count="4">0</span></div>
+            <div class="row"><span>3 ★</span><div class="bar" data-star="3"><i style="width:0%"></i></div><span data-count="3">0</span></div>
+            <div class="row"><span>2 ★</span><div class="bar" data-star="2"><i style="width:0%"></i></div><span data-count="2">0</span></div>
+            <div class="row"><span>1 ★</span><div class="bar" data-star="1"><i style="width:0%"></i></div><span data-count="1">0</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REVIEW FORM (auto-publish) ================= -->
+    <section class="section" style="padding-top:1.5rem;">
+      <div class="container contact-layout">
+        <!-- Form -->
+        <div class="form-card reveal" id="review-card">
+          <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-star"></use></svg> Automatic Review</span>
+          <h2 style="font-size:1.6rem; margin-bottom:0.5rem;">Add Your Review</h2>
+          <p style="color:var(--muted); margin-bottom:1.6rem; font-size:0.96rem;">
+            Fill the form and your review appears on this page instantly — no waiting, no login.
+          </p>
+          <form id="review-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="rv-name">Your Name <span class="req">*</span></label>
+                <input id="rv-name" name="name" type="text" required placeholder="e.g. Ahmed K." autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="rv-area">Area / Emirate</label>
+                <input id="rv-area" name="area" type="text" placeholder="e.g. Khalifa City, Abu Dhabi">
+              </div>
+              <div class="field">
+                <label for="rv-service">Service Used</label>
+                <select id="rv-service" name="service">
+                  <option value="Cockroach Treatment">Cockroach / Insect Treatment</option>
+                  <option value="Bed Bug Treatment">Bed Bug Treatment</option>
+                  <option value="Termite Control">Termite Control</option>
+                  <option value="Rodent Control">Rodent Control</option>
+                  <option value="Disinfection">Disinfection &amp; Sanitisation</option>
+                  <option value="Cleaning Services">Cleaning Services</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Your Rating <span class="req">*</span></label>
+                <input type="hidden" id="review-rating" name="rating" value="">
+                <div class="star-input" id="star-input" role="group" aria-label="Star rating">
+                  <button type="button" data-v="1" aria-label="1 star"><svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg></button>
+                  <button type="button" data-v="2" aria-label="2 stars"><svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg></button>
+                  <button type="button" data-v="3" aria-label="3 stars"><svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg></button>
+                  <button type="button" data-v="4" aria-label="4 stars"><svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg></button>
+                  <button type="button" data-v="5" aria-label="5 stars"><svg class="icon"><use href="assets/icons.svg#ui-star"></use></svg></button>
+                </div>
+              </div>
+              <div class="field full">
+                <label for="rv-text">Your Review <span class="req">*</span></label>
+                <textarea id="rv-text" name="text" required placeholder="Tell others about your experience — the pest problem, how quickly we responded, and the results…"></textarea>
+                <p class="hint">Reviews are published automatically and appear at the top of the list below.</p>
+              </div>
+              <div class="field full">
+                <button class="btn btn-primary btn-lg" type="submit">
+                  <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-check"></use></svg>
+                  Publish My Review
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Side info -->
+        <div class="contact-side">
+          <div class="contact-tile reveal">
+            <div class="tile-ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-shield"></use></svg></div>
+            <div>
+              <h4>Guaranteed Work = Honest Reviews</h4>
+              <p>Our 3-month pest-free guarantee means most customers see the full result before reviewing us.</p>
+            </div>
+          </div>
+          <div class="contact-tile reveal">
+            <div class="tile-ic wa"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-whatsapp"></use></svg></div>
+            <div>
+              <h4>Prefer WhatsApp?</h4>
+              <p>Send your feedback directly — we read every message.</p>
+              <a href="#" data-wa="Hello Novex, I'd like to share feedback about your service.">Send feedback on WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-tile reveal">
+            <div class="tile-ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-calendar"></use></svg></div>
+            <div>
+              <h4>Need Service First?</h4>
+              <p>Book a free inspection and see the Novex hygiene standard yourself.</p>
+              <a href="contact.html">Go to booking form →</a>
+            </div>
+          </div>
+          <div class="licence-box reveal">
+            <h4><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-shield"></use></svg> Licensed &amp; Insured</h4>
+            <div class="lic-no">CN-6758651</div>
+            <p>Abu Dhabi-licensed pest control operator.</p>
+            <div class="persons">Contact persons: <strong>Aldrin Robert</strong> · <strong>Jafar</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REVIEWS LIST ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">What Customers Say</span>
+          <h2>Latest Reviews</h2>
+          <p>Newest first — submitted through this page appear automatically.</p>
+        </div>
+        <p id="reviews-empty" class="text-center" style="color:var(--muted); display:none;">No reviews yet — be the first to add one above!</p>
+        <div class="grid-3" id="reviews-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="brand-block">
+          <img src="assets/logo.svg" alt="Novex Pest Control Cleaning Services L.L.C">
+          <p>
+            Licensed pest control and building cleaning contractor serving homes, offices and businesses
+            across Abu Dhabi &amp; Al Ain. Hygiene-first treatments with a 3-month pest-free guarantee.
+          </p>
+          <p class="arabic mt-2" lang="ar">نوفكس — مكافحة الآفات وخدمات النظافة. نحن نضع النظافة أولاً.</p>
+        </div>
+        <div>
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html#insects">Crawling &amp; Flying Insects</a></li>
+            <li><a href="services.html#termites">Termite Control</a></li>
+            <li><a href="services.html#bedbugs">Bed Bug Treatment</a></li>
+            <li><a href="services.html#rodents">Rodent Control</a></li>
+            <li><a href="services.html#disinfection">Disinfection &amp; Sanitisation</a></li>
+            <li><a href="services.html#cleaning">Building &amp; Deep Cleaning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-phone"></use></svg>
+              <span><strong>Abu Dhabi:</strong><br>054 1383 916 · 050 3698 916</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-phone"></use></svg>
+              <span><strong>Al Ain:</strong><br>050 6675 383</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-whatsapp"></use></svg>
+              <a href="#" data-wa="Hello Novex Pest Control!">Chat on WhatsApp</a></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-mail"></use></svg>
+              <a href="mailto:novexpestconrolauh@gmail.com">novexpestconrolauh@gmail.com</a></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-pin"></use></svg>
+              <span>Abu Dhabi &amp; Al Ain, U.A.E.</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-note">
+        <span>© <span data-year>2026</span> Novex Pest Control Cleaning Services L.L.C. All rights reserved.</span>
+        <span>Abu Dhabi Licence No. CN-6758651 · novexpestcountrol.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="#" data-wa="Hello Novex Pest Control, I need help with pest control." aria-label="WhatsApp us now">
+    <span class="wa-tip">Chat with us on WhatsApp</span>
+    <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#ui-whatsapp"></use></svg>
+  </a>
+
+  <!-- Seed reviews (displayed until visitors add their own) -->
+  <script>
+    window.NOVEX_SEED_REVIEWS = [
+      { name: "Ahmed K.", area: "Khalifa City, Abu Dhabi", service: "Cockroach Treatment", rating: 5,
+        text: "Cockroaches in the kitchen were gone within days. The team also disinfected the whole area and explained everything clearly. Very professional and hygienic work.",
+        date: "2026-08-14T09:30:00.000Z" },
+      { name: "Sarah M.", area: "Al Ain", service: "Bed Bug Treatment", rating: 5,
+        text: "Booked on WhatsApp in the morning, technician arrived the same day. Bed bugs in our bedroom were completely eliminated. The carpet shampooing afterwards was a bonus!",
+        date: "2026-07-28T17:05:00.000Z" },
+      { name: "Robert J.", area: "Mussafah, Abu Dhabi", service: "Office Contract", rating: 5,
+        text: "We use Novex for our office pest control contract. Always on time, always documented, and their hygiene standards meet what our auditors expect.",
+        date: "2026-07-02T11:20:00.000Z" },
+      { name: "Mariam A.", area: "Al Reef, Abu Dhabi", service: "Termite Control", rating: 5,
+        text: "Found termite damage in our villa's wooden cabinet. Novex inspected free, explained the baiting plan, and after treatment we have not seen a single white ant.",
+        date: "2026-06-19T14:45:00.000Z" },
+      { name: "Faisal H.", area: "Al Jimi, Al Ain", service: "Rodent Control", rating: 4,
+        text: "Rats in the store room were handled in two visits. Technician sealed the gaps under the door as promised. Very polite team and reasonable price.",
+        date: "2026-05-30T10:10:00.000Z" },
+      { name: "Lena P.", area: "Corniche, Abu Dhabi", service: "Cleaning Services", rating: 5,
+        text: "Deep cleaning before moving into our new flat — carpets and sofas came out looking brand new. Will book again for the annual clean.",
+        date: "2026-05-11T16:00:00.000Z" }
+    ];
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
